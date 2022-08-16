@@ -2,11 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const uiSlice = createSlice({
     name: 'ui',
-    intialState: {
+    initialState: {
         notification: null
     },
     reducers: {
         showNotification(state, action){
+            console.log("deberia aparecer el notif!!");
             state.notification = {
                 message: action.payload.message,
                 type: action.payload.type,
